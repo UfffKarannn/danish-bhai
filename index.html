@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tribute to Danish Zehen">
+    <meta name="keywords" content="Danish Zehen, Tribute, Influencer, Vlogger, Style Icon">
+    <title>Tribute to Danish Zehen</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="overlay"></div>
+        <video autoplay muted loop id="background-video">
+            <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Sky_Lapse1.mp455751.webm" type="video/webm">
+        </video>
+        <div class="header-content">
+            <h2 class="small-heading">Wassup wassup😎fambruhhhhh😘</h2> <!-- Small heading -->
+            <h1>Tribute to Danish Zehen</h1>
+            <p class="quote">"Agar aaj Danish bhai zinda rehte the na😥, to duniya kuch aur hi rehti thi🥰"</p>
+            <a href="#about" class="btn-primary">Learn More</a>
+        </div>
+        <div class="youtube-container">
+            <iframe 
+                src="https://www.youtube.com/embed/9Mw6Vn4vb28?autoplay=1&controls=0&loop=1&playlist=9Mw6Vn4vb28" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>        
+    </header>
+    <section class="about" id="about">
+        <h2>About Danish Zehen</h2>
+        <p>Danish Zehen was a young influencer😋, vlogger📷, and style🐫 icon. He touched the hearts💘 of millions with his unique style👩‍🦲, fearless attitude😎, and unforgettable personality🤠. Even though he left us too soon🕊, his legacy continues to inspire and resonate with people around the world.🎗🌼⚰️</p>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Memorable Moments</h2>
+        <div class="gallery-container">
+            <img src="https://wallpaperaccess.com/full/2012052.jpg" alt="Danish Zehen Image 1">
+            <img src="https://wallpaperaccess.com/full/3034833.jpg" alt="Danish Zehen Image 2">
+            <img src="https://wallpaperaccess.com/full/3034836.jpg" alt="Danish Zehen Image 3">
+            <img src="https://wallpaperaccess.com/full/2012057.jpg" alt="Danish Zehen Image 4">
+            <img src="https://wallpaperaccess.com/full/3034863.jpg" alt="Danish Zehen Image 5">
+        </div>
+    </section>
+
+    <footer>
+        <p>In loving memory of Danish Zehen. Forever in our hearts.</p>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/c/DanishZehenfambruh" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="YouTube">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.header-content', { delay: 500 });
+        ScrollReveal().reveal('.about', { delay: 500 });
+        ScrollReveal().reveal('.gallery-container img', { interval: 200 });
+
+        // Unmute the YouTube video after a very short delay
+        setTimeout(function() {
+            var iframe = document.getElementById('youtube-video');
+            iframe.src = "https://www.youtube.com/embed/9Mw6Vn4vb28?autoplay=1&controls=0&loop=1&playlist=9Mw6Vn4vb28";
+        }, 1); // 1 millisecond delay
+    </script>
+</body>
+</html>
